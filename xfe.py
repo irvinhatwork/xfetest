@@ -7,10 +7,17 @@ class Xfe(object):
     def __init__(self):
         logging.basicConfig(level=logging.INFO)
         self.logger = logging.getLogger(__name__)
-        self.logger.setLevel(logging.DEBUG)
+        # self.logger.setLevel(logging.DEBUG)
+        self.logger.setLevel(logging.INFO)
 
-        self.xfe_config = ConfigManager()
+        self.logger.info('Initializing XFE')
+        self.xfe_config = ConfigManager.ConfigManager()
+        self.logger.info('API USER: %s', self.xfe_config.xfe.api_key)
 
 
-def main(parameter_list):
-        xfe_test = Xfe()
+def main():
+    xfe_test = Xfe()
+
+
+if __name__ == "__main__":
+    main()
