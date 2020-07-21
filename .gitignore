@@ -136,3 +136,10 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# My-dirs
+/config
+/outputs
+/.idea
+/.vscode
+.vscode/settings.json
