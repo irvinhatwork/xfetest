@@ -16,7 +16,7 @@ class ConfigManager(object):
 
         self.logger.info('Initializing Config Manager.')
         self.local_config = self.load_config()
-        #self.api_user = self.local_config.get_full_key('api_key')
+        # self.api_user = self.local_config.get_full_key('api_key')
         # self.api_pass =
 
     def load_config(self):
