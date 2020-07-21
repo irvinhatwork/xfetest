@@ -1,4 +1,6 @@
 import logging
+import ConfigManager
+
 
 class Xfe(object):
 
@@ -7,7 +9,8 @@ class Xfe(object):
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
 
-        self.xfe_config = 
+        self.xfe_config = ConfigManager()
+
 
 def main(parameter_list):
         xfe_test = Xfe()
